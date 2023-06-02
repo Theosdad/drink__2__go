@@ -1,0 +1,16 @@
+.page {
+  height: 100%;
+}
+
+.page__body {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  height: 100%;
+  margin: 0 auto;
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 400;
+  color: $base-black;
+  background-color: $base-white;
+}

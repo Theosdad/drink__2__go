@@ -1,0 +1,14 @@
+header .header__container {
+  position: relative;
+  width: 100%;
+  min-height: 60px;
+  padding-right: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 40px;
+  }
+}

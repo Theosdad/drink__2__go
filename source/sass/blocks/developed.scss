@@ -1,0 +1,31 @@
+.developed {
+  display: flex;
+  justify-content: center;
+}
+
+.developed__text {
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: $base-grey;
+}
+
+.developed__link {
+  display: inline-flex;
+  font-size: 12px;
+  line-height: 16px;
+  color: $base-grey;
+
+  &:hover,
+  &:focus {
+    color: $base-primary;
+  }
+
+  &:active {
+    color: $primary-darker;
+  }
+}
+
+.developed__icon {
+  margin-left: 5px;
+}

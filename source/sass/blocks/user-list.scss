@@ -1,0 +1,74 @@
+.user-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+
+  @media (min-width: $desktop-width) {
+    gap: 20px;
+  }
+}
+
+.user-list__item {
+  min-width: 60px;
+  min-height: 60px;
+}
+
+.user-list__link {
+  position: relative;
+  display: block;
+  min-width: 60px;
+  min-height: 60px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: $base-black;
+  cursor: pointer;
+
+  &:active {
+    background-color: $base-secondary;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 80px;
+
+    &:hover,
+    &:focus {
+      color: $base-primary;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+    padding: 32px 20px;
+  }
+}
+
+.user-list__icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+
+  @media (min-width: $desktop-width) {
+    position: static;
+    margin: 0;
+    margin-right: 8px;
+  }
+}
+
+.user-list__label {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
